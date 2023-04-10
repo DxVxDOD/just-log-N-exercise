@@ -21,7 +21,7 @@ export default function RootLayout({
 	return (
 		<html lang='en' className={KanitFont.className}>
 			<body className='dark' >
-				<main>
+				<main className='box-border h-screen p-0 m-0 overflow-hidden text-slate-950 dark:text-slate-200' >
 					<Header/>
 					{children}
 				</main>
