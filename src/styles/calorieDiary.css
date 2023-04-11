@@ -1,0 +1,38 @@
+.outerCircle {
+    width: 8em;
+    height: 8em;
+    padding: 1em;
+    border-radius: 50%;
+    box-shadow: 3px 3px 5px -1px rgba(0, 0, 0, 0.3),
+                -3px -3px 5px -1px rgba(224, 242, 254, 0.2);
+}
+
+.innerCircle {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    box-shadow: inset 3px 3px 5px -1px rgba(0, 0, 0, 0.3),
+                inset -3px -3px 5px -1px rgba(224, 242, 254, 0.2);
+}
+
+.progressBar {
+    position: relative;
+    width: 8em;
+    height: 8em;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+.progressBar::before {
+    content: '';
+    position: absolute;
+    height: 6em;
+    width: 6em;
+    border-radius: 50%;
+    background-color: #09090b;
+}
+
+.valueContainer {
+    position: relative;
+}
