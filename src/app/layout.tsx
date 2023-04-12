@@ -9,7 +9,7 @@ export const metadata = {
 };
 
 const KanitFont = Kanit({
-	weight: ['200', '700'],
+	weight: ['200', '300', '700'],
 	subsets: ['latin'],
 });
 
@@ -21,7 +21,7 @@ export default function RootLayout({
 	return (
 		<html lang='en' className={KanitFont.className}>
 			<body className='dark' >
-				<main className='box-border h-screen p-0 m-0 overflow-hidden text-slate-950 dark:text-slate-200' >
+				<main className='box-border h-screen p-0 m-0 lg:overflow-hidden text-slate-950 dark:text-slate-200' >
 					<Header/>
 					{children}
 				</main>
