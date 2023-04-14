@@ -1,0 +1,37 @@
+.outerCircle {
+    width: 8em;
+    height: 8em;
+    padding: 1em;
+    border-radius: 50%;
+}
+
+.calorieBox {
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.3),
+    -3px -3px 5px 0px rgba(224, 242, 254, 0.5);
+}
+
+.progressBar {
+    position: relative;
+    bottom: 0.5em;
+    right: 0.5em;
+    width: 7em;
+    height: 7em;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+.progressBar::before {
+    content: '';
+    position: absolute;
+    height: 5.5em;
+    width: 5.5em;
+    border-radius: 50%;
+    background-color: #cbd5e1;
+    box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.3),
+                -3px -3px 5px 1px rgba(255, 255, 255, 0.1);
+}
+
+.valueContainer {
+    position: relative;
+}

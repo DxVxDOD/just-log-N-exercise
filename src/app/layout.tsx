@@ -1,7 +1,6 @@
-/* eslint-disable @typescript-eslint/naming-convention */
 import React from 'react';
 import './globals.css';
-import {IBM_Plex_Mono} from 'next/font/google';
+import {Kanit} from 'next/font/google';
 import Header from './components/Header';
 
 export const metadata = {
@@ -9,8 +8,8 @@ export const metadata = {
 	description: 'A free to use PWA for all of your fitness needs',
 };
 
-const IBMMono = IBM_Plex_Mono({
-	weight: ['200', '700'],
+const KanitFont = Kanit({
+	weight: ['200', '300', '700'],
 	subsets: ['latin'],
 });
 
@@ -20,9 +19,9 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html lang='en'>
-			<body className={IBMMono.className} >
-				<main>
+		<html lang='en' className={KanitFont.className}>
+			<body className='dark' >
+				<main className='box-border h-screen p-0 m-0 lg:overflow-hidden text-slate-950 dark:text-slate-200' >
 					<Header/>
 					{children}
 				</main>
