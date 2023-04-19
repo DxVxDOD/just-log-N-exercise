@@ -1,4 +1,4 @@
-export type UseDarkModeOutPut = {
-	isDarkMode: boolean;
-	toggle: () => void;
+export type ThemeToggler = {
+	theme: boolean;
+	toggleTheme: () => void;
 };

@@ -2,19 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes rotate360 {
-    0% {
-        transform: rotate(0);
+@keyframes pressTheme {
+    0%{
+        transform: scale(1)
     }
-
     100% {
-        transform: rotate(360deg);
+        transform: scale(0.95)
     }
 }
 
-.dropdownMenuButton {
-    animation-name: rotate360;
-    animation-duration: 8s;
-    animation-iteration-count: infinite;
-    animation-timing-function:linear
+.pressButton:active {
+    animation: pressTheme 150ms ease-out;
+    box-shadow: inset 3px 3px 5px -1px rgba(0, 0, 0, 0.3),
+                inset -3px -3px 5px -1px rgba(224, 242, 254, 0.1),
+                -0.5px -0.5px 0px rgba(224, 242, 254, 0.1),
+                0.5px 0.5px 0px rgba(224, 242, 254, 0.2),
+                0px 12px 10px rgba(224, 242, 254, 0.05);
 }
