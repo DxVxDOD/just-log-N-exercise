@@ -2,20 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes pressTheme {
-    0%{
-        transform: scale(1)
-    }
-    100% {
-        transform: scale(0.95)
-    }
+body * {
+    @apply transition-all ease-out duration-[1500ms];
 }
 
-.pressButton:active {
-    animation: pressTheme 150ms ease-out;
-    box-shadow: inset 3px 3px 5px -1px rgba(0, 0, 0, 0.3),
-                inset -3px -3px 5px -1px rgba(224, 242, 254, 0.1),
-                -0.5px -0.5px 0px rgba(224, 242, 254, 0.1),
-                0.5px 0.5px 0px rgba(224, 242, 254, 0.2),
-                0px 12px 10px rgba(224, 242, 254, 0.05);
-}

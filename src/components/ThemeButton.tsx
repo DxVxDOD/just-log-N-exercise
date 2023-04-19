@@ -1,7 +1,9 @@
+'use client';
+
 import React, {useContext, useEffect} from 'react';
 import Image from 'next/image';
-import Sun from '../../../public/sun-svgrepo-com (1).png';
-import Moon from '../../../public/moon-svgrepo-com.png';
+import Sun from '../../public/sun-svgrepo-com (1).png';
+import Moon from '../../public/moon-svgrepo-com.png';
 import {ThemeContext} from '@/Context/ThemeContext';
 
 const ThemeButton = () => {

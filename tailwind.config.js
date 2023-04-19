@@ -8,11 +8,18 @@ module.exports = {
   ],
   theme: {
     extend: {
-      animation: {pressDown: 'pressDown 150ms ease-out'},
+      animation: {
+        pressDown: 'pressDown 150ms ease-out',
+        riseUp: 'riseUp 1250ms cubic-bezier(0,0,.08,1.1)'
+      },
       keyframes: {
         pressDown: {
           '0%': { transform: 'scale(1)' },
         '100%': { transform: 'scale(0.95)' },
+        },
+        riseUp: {
+          '0%': {transform: 'scale(0.8) translateY(-10%)', opacity: 0},
+          "100%": {transform: 'scale(1) translateY(0%)', opacity: 1},
         }
       },
       backgroundImage: {

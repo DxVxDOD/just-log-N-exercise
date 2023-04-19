@@ -1,7 +1,7 @@
 import React from 'react';
 import './globals.css';
 import {Kanit} from 'next/font/google';
-import Header from './components/Header';
+import Header from '../components/Header';
 import ThemeProvider from '@/Context/ThemeContext';
 
 export const metadata = {
@@ -23,7 +23,7 @@ export default function RootLayout({
 		<html lang='en' className={KanitFont.className}>
 			<body className='dark' >
 				<ThemeProvider>
-					<main className='box-border h-screen p-0 m-0 overflow-hidden text-slate-950 dark:text-slate-200' >
+					<main className='box-border h-screen p-0 m-0 overflow-hidden text-slate-950 dark:text-slate-200 bg-slate-300 dark:bg-zinc-900' >
 						<Header/>
 						{children}
 					</main>

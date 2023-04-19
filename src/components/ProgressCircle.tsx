@@ -1,5 +1,5 @@
-import React, {useEffect, useState} from 'react';
-import '../../styles/calorieDiary.css';
+import React, {useEffect} from 'react';
+import '../styles/calorieDiary.css';
 
 const ProgressCircle = () => {
 	const progressEndValue = 70;
@@ -33,7 +33,7 @@ const ProgressCircle = () => {
 	return (
 		<div>
 			<div className='outerCircle shadow-glow dark:shadow-glowDark' >
-				<div className='shadow-progressBar progressBar dark:shadow-progressBarDark dark:before:bg-zinc-950'>
+				<div className='shadow-progressBar progressBar dark:shadow-progressBarDark dark:before:bg-zinc-900'>
 					<div className='valueContainer'>
 						{progressEndValue}
 					</div>

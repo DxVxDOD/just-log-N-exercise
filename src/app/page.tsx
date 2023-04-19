@@ -16,7 +16,7 @@ import CaloriesDark from '../../public/calories-svgrepo-comDark.png';
 const HomePage = () => {
 	const {theme} = useContext(ThemeContext);
 	return (
-		<nav className='h-full bg-slate-300 dark:bg-zinc-900'>
+		<nav className='h-full animate-riseUp'>
 			<nav className='flex flex-wrap justify-center gap-6 p-6 lg:gap-10 ' >
 				<Link
 					className='lg:h-[10em] lg:w-[10em] active:animate-pressDown active:shadow-pressButton dark:active:shadow-pressButtonDark h-[6em] flex items-center justify-center m-3 w-[6em] shadow-glow dark:shadow-glowDark rounded-full'
