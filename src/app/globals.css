@@ -2,19 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes rotate360 {
-    0% {
-        transform: rotate(0);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
+body * {
+    @apply transition-all ease-out duration-[1500ms];
 }
 
-.dropdownMenuButton {
-    animation-name: rotate360;
-    animation-duration: 8s;
-    animation-iteration-count: infinite;
-    animation-timing-function:linear
-}

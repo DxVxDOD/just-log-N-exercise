@@ -8,6 +8,20 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation: {
+        pressDown: 'pressDown 150ms ease-out',
+        riseUp: 'riseUp 1250ms cubic-bezier(0,0,.08,1.1)'
+      },
+      keyframes: {
+        pressDown: {
+          '0%': { transform: 'scale(1)' },
+        '100%': { transform: 'scale(0.95)' },
+        },
+        riseUp: {
+          '0%': {transform: 'scale(0.8) translateY(-10%)', opacity: 0},
+          "100%": {transform: 'scale(1) translateY(0%)', opacity: 1},
+        }
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
@@ -18,7 +32,10 @@ module.exports = {
         'glowDark': '3px 3px 5px 1px rgba(0, 0, 0, 1), -2px -2px 7px rgba(255, 255, 255, 0.13)',
         
         'progressBar': 'inset 3px 3px 5px 0px rgba(0, 0, 0, 0.3), inset -3px -3px 5px 0px rgba(0, 0, 0, 0.3);',
-        'progressBarDark': 'inset 3px 3px 3px 1px rgba(0, 0, 0, 0.5), inset -3px -3px 5px 10px rgba(0, 0, 0, 0.5);',
+        'progressBarDark': 'inset 3px 3px 3px 1px rgba(0, 0, 0, 0.5`), inset -3px -3px 5px 10px rgba(0, 0, 0, 0.5);',
+
+        'pressButton': 'inset 3px 3px 5px -1px rgba(0, 0, 0, 0.3), inset -3px -3px 5px -1px rgba(224, 242, 254, 0.1), -0.5px -0.5px 0px rgba(224, 242, 254, 0.1), 0.5px 0.5px 0px rgba(224, 242, 254, 0.2), 0px 12px 10px rgba(224, 242, 254, 0.05);',
+        'pressButtonDark': 'inset 3px 3px 5px -1px rgba(0, 0, 0, 1), inset -3px -3px 6px -1px rgba(255, 255, 255, 0.1), -0.5px -0.5px 0px rgba(0, 0, 0, 1), 0.5px 0.5px 0px rgba(0, 0, 0, 1);'
       },
       backgroundColor: {
         'rich_gray': '#1F2022',
